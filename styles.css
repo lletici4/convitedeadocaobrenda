@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5c9ed;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;  /* Ajustando para reduzir a distância */
+}
+
+header h1 {
+    color: #b372a7;
+    margin-bottom: 10px;  /* Ajuste no título para aproximar mais do texto */
+}
+
+header p {
+    font-size: 20px;  /* Reduzindo um pouco o tamanho da fonte */
+    color: #555;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pergunta p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #b372a7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #b372a7;
+}
+
+.foto img {
+    width: 180px;
+    border-radius: 100%;
+    margin-top: 20px;  /* Ajustado para aproximar mais da parte superior */
+}
+
+#mensagem-sim {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+#imagens-sim {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;  /* Adicionando um espaço entre a mensagem e as imagens */
+}
+
+.imagem-distribuida {
+    width: 120px;  /* Definindo o tamanho das imagens para um valor pequeno/médio */
+    height: auto;  /* Mantém a proporção original da imagem */
+    margin: 10px;
+}
+
+/* Ajustando a imagem pngwing.com (3) para ter uma largura maior */
+#imagens-sim img:nth-child(2) {
+    width: 160px;  /* Largura maior para a segunda imagem */
+}
+
+#mensagem-nao, #pergunta2 {
+    display: none;
+}
+
+#voltar-button {
+    display: none; /* Inicia invisível */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 8px 16px;
+    font-size: 14px; /* Tamanho reduzido */
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#voltar-button:hover {
+    background-color: #e0e0e0;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite de Adoção</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Áudio que começa automaticamente -->
+    <audio id="audio" autoplay loop>
+        <source src="C:\Users\letic\OneDrive\Desktop\Convites veteranos\Brenda\Mídia\Edward Sharpe & The Magnetic Zeros - Home (Official Video).mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <!-- Botão Voltar (apenas em páginas que não são a inicial) -->
+    <button id="voltar-button" style="display: none;">Voltar</button>
+
+    <!-- Topo da página -->
+    <header>
+        <h1>Convite de Adoção</h1>
+        <p>De: Letícia Zago</p>
+        <p>Para: vet Brenda</p>
+    </header>
+
+    <!-- Foto da veterana (apenas enquanto a pergunta 1 está visível) -->
+    <div id="foto-vet-container" class="foto">
+        <img id="foto-vet" src="C:\Users\letic\OneDrive\Desktop\Convites veteranos\Brenda\Mídia\Captura de tela 2025-03-17 194631.png">
+    </div>
+
+    <!-- Pergunta 1 -->
+    <div id="pergunta1" class="container">
+        <div class="pergunta">
+            <p>Gostaria de me adotar?</p>
+            <button id="sim-button">Sim!</button>
+            <button id="nao-button">Não🙄</button>
+        </div>
+    </div>
+
+    <!-- Mensagem de agradecimento (após "Sim!") -->
+    <div id="mensagem-sim" class="container" style="display: none;">
+        <p>Ebaaaa🩷 Eu já era muito grata a ti por toda a atenção e preocupação que tiveste com o bem-estar dos bixos durante o trote e agora tenho ainda mais motivos para agradecer. Te admiro muito e prometo tentar retribuir os teus auxílios da melhor forma possível!</p>
+    </div>
+
+    <!-- Imagens distribuídas pela página após "Sim!" -->
+    <div id="imagens-sim" style="display: none;">
+        <img src="C:\Users\letic\OneDrive\Desktop\Convites veteranos\Brenda\Mídia\pngwing.com (1).png" class="imagem-distribuida">
+        <img src="C:\Users\letic\OneDrive\Desktop\Convites veteranos\Brenda\Mídia\pngwing.com (3).png" alt="Imagem 2" class="imagem-distribuida">
+    </div>
+
+    <!-- Pergunta 2 (caso escolha "Não🙄") -->
+    <div id="pergunta2" class="container" style="display: none;">
+        <p>Tem certeza?🥺</p>
+        <button id="sim2-button">Sim, tenho certeza.</button>
+        <button id="mudei-ideia-button">Acho que mudei de ideia…</button>
+    </div>
+
+    <!-- Mensagem caso escolha "Sim, tenho certeza." -->
+    <div id="mensagem-nao" class="container" style="display: none;">
+        <p>Tudo bem, respeito a decisão da prezada veterana.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
